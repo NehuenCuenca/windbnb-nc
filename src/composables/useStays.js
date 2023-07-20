@@ -1,14 +1,10 @@
-import { ref } from "vue";
+import staysRecords from '../database/stays.json'
 
 const useStays = () => {
 
   const getAllStays = async () => {
     try {
-      const { origin } = new URL(window.location.href)
-      console.log(origin);
-      const resp  = await fetch(`${origin}/src/database/stays.json`);
-      const stays = await resp.json();
-      return [...stays];
+      return [ ...staysRecords ];
     } catch (error) {
       console.error("EXPLOTO ESTO --->: ", error);
     }
