@@ -1,0 +1,76 @@
+/* https://www.figma.com/file/KGNH8dbclXT1vzXLyPrBeu/Windbnb?type=design&node-id=0-1&mode=design&t=ommzs0MPvUsANZxc-0 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish:wght@400;700;800&display=swap');
+
+/* 
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mulish', sans-serif;
+*/
+
+
+:root {
+  --titleBlackStrong: #333333;
+  --subtitleBlackSoft: #4F4F4F;
+  --contentGreySoft: #828282;
+  --placeholderGrey: #BDBDBD;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--titleBlackStrong);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button { cursor: pointer; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  height: auto;
+}
+
+#app {
+  width: 100%;
+  height: auto;  
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+  gap: 10vh 0;
+}
+
+footer {
+  padding: 5vh 5vw;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font: 500 1rem 'Montserrat', sans-serif;
+  color: var(--contentGreySoft);
+}
+
+
+@media (max-width: 375px) {
+  
+}
